@@ -1,0 +1,20 @@
+# On indique sur quelle table on veut faire les tests
+checks for crypto_prices:
+  
+  # Test de volume : on veut vérifier qu'on n'a pas une table vide
+  - row_count > 0
+  
+  # Test de validité : l'ID de la crypto ne doit jamais être vide (null)
+  - missing_count(crypto_id) = 0:
+      name: "Toutes les cryptos doivent avoir un identifiant"
+
+
+  # Test métier : le prix doit être réaliste
+  # Si l'API renvoie 0 ou un prix négatif c'est une erreur
+  - min(price_euro) > 0:
+      name: "Le prix doit être strictement positif"
+  
+  # Test de schéma : on vérifie que la colonne "price_euro" existe bien
+  - schema:
+      fail:
+        when required column missing: [price_euro]

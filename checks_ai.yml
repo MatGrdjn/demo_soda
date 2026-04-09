@@ -1,0 +1,11 @@
+checks for ia_reports:
+  # Gemini a bien généré une ligne
+  - row_count > 0
+  
+  - min_length(content) > 50:
+      name: "Le rapport de l'IA doit faire au moins 50 caractères"
+      
+  # Le regex permet de chercher sur plusieurs lignes
+  - invalid_count(content) = 0:
+      name: "ERREUR FATALE : Le texte généré doit OBLIGATOIREMENT contenir les mots exacts 'TENDANCE:', 'SENTIMENT_NEWS:' et 'RAISON:'."
+      valid regex: "(?s).*TENDANCE:.*SENTIMENT_NEWS:.*RAISON:.*"

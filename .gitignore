@@ -1,0 +1,15 @@
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Airflow
+logs/
+airflow.db
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/

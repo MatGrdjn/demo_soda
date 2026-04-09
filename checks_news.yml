@@ -1,0 +1,11 @@
+checks for crypto_news:
+  # 1 Vérification qu'on a bien récupéré des articles
+  - row_count > 0
+  
+  # 2 Le titre et la date ne doivent jamais être vides
+  - missing_count(title) = 0
+  - missing_count(pub_date) = 0
+  
+  # 3 Test de qualité textuelle : un vrai titre d'article fait plus de quelques lettres
+  - min_length(title) > 10:
+      name: "Les titres des articles doivent faire au moins 10 caractères"

@@ -1,0 +1,54 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "editor.fontFamily": "JetBrains Mono, Consolas, monospace",
+    "editor.fontLigatures": "'calt', 'liga', 'dlig'",
+    "editor.fontSize": 14,
+    "editor.lineHeight": 1.6,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorBlinking": "smooth",
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "editor.minimap.enabled": false,
+    "workbench.iconTheme": "catppuccin-mocha",
+
+    "terminal.integrated.fontFamily": "JetBrains Mono, Consolas, monospace",
+    "terminal.integrated.fontSize": 13,
+    "terminal.integrated.lineHeight": 1.3,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.smoothScrolling": true,
+    "terminal.integrated.padding": { "top": 8, "bottom": 8 },
+
+    "workbench.editor.enablePreview": false,
+    "breadcrumbs.enabled": true,
+
+    "workbench.colorCustomizations": {
+      "terminal.background": "#1e1e2e",
+      "terminal.foreground": "#c6d0f5",
+      "terminalCursor.background": "#f5e0dc",
+      "terminalCursor.foreground": "#f5e0dc",
+      "terminal.ansiBlack": "#1e1e2e",
+      "terminal.ansiRed": "#f38ba8",
+      "terminal.ansiGreen": "#a6e3a1",
+      "terminal.ansiYellow": "#f9e2af",
+      "terminal.ansiBlue": "#89b4fa",
+      "terminal.ansiMagenta": "#f5c2e7",
+      "terminal.ansiCyan": "#94e2d5",
+      "terminal.ansiWhite": "#bac2de",
+      "terminal.ansiBrightBlack": "#585b70",
+      "terminal.ansiBrightRed": "#f38ba8",
+      "terminal.ansiBrightGreen": "#a6e3a1",
+      "terminal.ansiBrightYellow": "#f9e2af",
+      "terminal.ansiBrightBlue": "#89b4fa",
+      "terminal.ansiBrightMagenta": "#f5c2e7",
+      "terminal.ansiBrightCyan": "#94e2d5",
+      "terminal.ansiBrightWhite": "#ffffff"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+data_source my_postgres_db:
+  type: postgres
+  connection:
+    host: postgres
+    port: '5432'
+    username: admin
+    password: admin
+    database: airflow_db
+  schema: public
